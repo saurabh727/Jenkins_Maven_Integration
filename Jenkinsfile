@@ -17,7 +17,7 @@ stage('Compile') {
     maven 'Maven-3.6.3'
   }
   steps {
-    package
+    mvn package
   }
 }
 }
