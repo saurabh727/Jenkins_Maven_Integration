@@ -6,8 +6,7 @@ pipeline{
                 git 'https://github.com/saurabh727/Jenkins_Maven_Integration.git'
                   }
                         }
-
-           }
+        
         stage("Maven Build") {
             tools {
                 maven 'Maven-3.6.3'
@@ -16,5 +15,6 @@ pipeline{
                     sh "mvn package"
                       }
                   }
-  }
-        }
+                             }
+           }
+}
