@@ -7,7 +7,7 @@ stages {
     }
 
     tools {
-      git 'Default'
+      git 'https://github.com/saurabh727/Jenkins_Maven_Integration.git'
     }
   }
 
