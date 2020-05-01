@@ -13,7 +13,7 @@ pipeline{
         
         stage("Maven Build") {
              steps {
-                 sh "mvn package"
+                 bat "mvn package"
                    }
                              }
            }
