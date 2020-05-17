@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.saurabh</groupId>
 	<artifactId>maven-hello-world</artifactId>
-	<packaging>tgz</packaging>
-	<version>2.0</version>
-	<name>maven_jenkins</name>
+	<packaging>war</packaging>
+	<version>3.0</version>
+	<name>maven_jenkins_declarative</name>
 
 	<properties>
 		<jdk.version>1.8</jdk.version>

@@ -1,23 +1,20 @@
 pipeline{
-agent any
-stages {
-  stage('Source') {
-    steps {
-      // One or more steps need to be included within the steps block.
+    agent any
+    
+    environment{
+        PATH = "C:/Program Files/apache-maven-3.6.3/bin:$PATH"
     }
-
-    tools {
-      git 'https://github.com/saurabh727/Jenkins_Maven_Integration.git'
-    }
-  }
-
-}
-stage('Compile') {
-  tools {
-    maven 'Maven-3.6.3'
-  }
-  steps {
-    package
-  }
-}
+    stages {
+        stage("Source") {
+            steps {
+                git 'https://github.com/saurabh727/Jenkins_Maven_Integration.git'
+                  }
+                        }
+        
+        stage("Maven Build") {
+             steps {
+                 bat "mvn package"
+                   }
+                             }
+           }
 }
